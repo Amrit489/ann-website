@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Anniversary</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background-image: url('https://path-to-your-love-themed-background.jpg'); /* Update with your background image URL */
+            background-size: cover;
+            background-position: center;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            animation: backgroundAnimation 10s infinite alternate;
+        }
+        @keyframes backgroundAnimation {
+            0% { background-color: rgba(255, 230, 230, 0.8); }
+            100% { background-color: rgba(249, 249, 249, 0.8); }
+        }
+        .container {
+            max-width: 600px;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        h1 {
+            color: #e91e63;
+        }
+        p {
+            line-height: 1.6;
+        }
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 15px 30px;
+            color: #fff;
+            background-color: #e91e63;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 1.2em;
+            animation: buttonPulse 2s infinite;
+            transition: transform 0.3s;
+        }
+        .button:hover {
+            transform: scale(1.1);
+        }
+        @keyframes buttonPulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        .message {
+            display: none;
+            animation: fadeInMessage 2s ease-in-out;
+        }
+        @keyframes fadeInMessage {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .special-message {
+            margin-top: 20px;
+            font-size: 1.5em;
+            color: #e91e63;
+            animation: textGlow 1.5s infinite alternate;
+        }
+        @keyframes textGlow {
+            0% { text-shadow: 0 0 10px rgba(233, 30, 99, 0.5); }
+            100% { text-shadow: 0 0 20px rgba(233, 30, 99, 1); }
+        }
+        .hearts {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            pointer-events: none;
+        }
+        .heart {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: red;
+            transform: rotate(-45deg);
+            animation: float 5s infinite;
+        }
+        .heart::before, .heart::after {
+            content: "";
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: red;
+            border-radius: 50%;
+        }
+        .heart::before {
+            top: -10px;
+            left: 0;
+        }
+        .heart::after {
+            top: 0;
+            left: -10px;
+        }
+        @keyframes float {
+            0% {
+                transform: translateY(0) rotate(-45deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-100vh) rotate(-45deg);
+                opacity: 0;
+            }
+        }
+    </style>
+    <script>
+        function showMessage() {
+            document.getElementById('message').style.display = 'block';
+            setTimeout(function() {
+                document.getElementById('specialMessage').style.display = 'block';
+            }, 2000); // Adjust the delay as needed
+        }
+
+        function createHearts() {
+            const heartsContainer = document.querySelector('.hearts');
+            for (let i = 0; i < 20; i++) {
+                const heart = document.createElement('div');
+                heart.classList.add('heart');
+                heart.style.left = `${Math.random() * 100}vw`;
+                heart.style.animationDuration = `${Math.random() * 3 + 2}s`;
+                heartsContainer.appendChild(heart);
+            }
+        }
+
+        window.onload = createHearts;
+    </script>
+</head>
+<body>
+    <div class="hearts"></div>
+    <div class="container">
+        <a href="#" class="button" onclick="showMessage()">Click here for a special message</a>
+        <div id="message" class="message">
+            <h1>Happy Anniversary!</h1>
+            <p>To my dearest Kritussss❤️🌻,</p>
+            <p>I wish you a very happy anniversary, my dear! Spending time with you is akin to fulfilling a delightful fantasy. I was certain that you would forever hold a special place in my heart the moment I first saw your grin. Tm bolte ho nah hm tmko apne lagey thhe babu tm hmko mere hi hisse lagey thhe🥺❤️.</p>
+            <p>In the past year, we have shared an infinite supply of laughter, created a multitude of memories that will endure forever, and confronted the challenges of life in close collaboration. You have truly been the most courageous of us. I hope you are well and that you are enjoying your time with baby 🥺. You are the genuine angel, bauwa mera 🧿❤️. The love, kindness, and unwavering support that you have extended to me have been instrumental in my personal growth, and I will be forever grateful for your assistance. Abhi shayad frustrate hoke kuch bhi boley, lekin deep down I know how much I need you and how incomplete I am without you 🥺😞❤️.</p>
+            <p>I regard you as more than just my girlfriend❤️🌸; you are also my closest friend🫂, my confidant🌹, and my spirit mate🧿. I experience a sense of completeness, appreciation, and genuine love when you are present in my life. I anticipate the opportunity to spend the remainder of my life with you, and in fact, all seven of my lives, as we create even more cherished memories and forge even stronger connections through our shared experiences.</p>
+            <p>I am appreciative of your exceptional character and the profound love you have shown me. You have many more years of love, laughter, and happiness ahead of you, my dear. There are no words to adequately express the depth of your affection.</p>
+            <p>I genuinely and sincerely appreciate your effort, love, and compassion, bauwa... I am extremely grateful for your contribution to the vibrancy of my life. 🥺❤️</p>
+            <p>To remain yours indefinitely,</p>
+        </div>
+        <div id="specialMessage" class="special-message" style="display: none;">
+            I love you the most Kritika❤️
+        </div>
+    </div>
+</body>
+</html>
